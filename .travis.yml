@@ -10,7 +10,7 @@ script:
 deploy:
   provider: surge
   cleanup: true
-  project: ./build/
+  project: ./build
   domain: tdd-demo.surge.sh
   on:
     branch: master
