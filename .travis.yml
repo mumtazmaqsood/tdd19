@@ -9,7 +9,7 @@ script:
 
 deploy:
   provider: surge
-  skip_cleanup: true
+  cleanup: true
   project: ./build/
   domain: tdd-demo.surge.sh
   on:
