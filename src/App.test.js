@@ -22,3 +22,8 @@ test('find deployed world ', () => {
   expect(linkElement1).toBeInTheDocument();
 });
 
+test('test placeholder', () => {
+  const renderReesponse = render(<App />);
+  const worldElement = renderReesponse.getByPlaceholderText(/Enter your name/i);
+  expect(worldElement).toBeInTheDocument();
+});
